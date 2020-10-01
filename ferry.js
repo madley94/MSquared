@@ -1,12 +1,12 @@
 
 
 // Ferry costs averaged out, price in GBP per 1000nm
-const a1 = 2300; //C152/PA38/PA28/C172
-const a2 = 2400; //PA28R/C182/SR22
-const a3 = 2600; //PA32R/C210/C206
-const a4 = 2700; //Seneca/DA42
-const a5 = 2950; //Cessna Caravan
-const a6 = 3500; //PA31/C402
+const a1 = 2300; //Microlight/TMG/C152/PA38/PA28/C172
+const a2 = 2500; //PA28R/C182/SR22
+const a3 = 2700; //PA32R/C210/C206
+const a4 = 2900; //Seneca/DA42
+const a5 = 3000; //Cessna Caravan
+const a6 = 3750; //PA31/C402
 const a7 = 4000; //King Air
 const a8 = 5400; //JS41
 const a9 = 5250; //DHC8-1/2/300
@@ -96,11 +96,6 @@ function ferryCalc(){
     }
 
     var finalPrice = ((dist * aCost)/1000).toFixed(2);
-
-    if (finalPrice < minPrice){
-        finalPrice = (minPrice).toFixed(2);
-        document.getElementById("result").innerHTML = `£ ${finalPrice} `;
-    } 
 
     document.getElementById("result").innerHTML = `£ ${finalPrice} `;
 
