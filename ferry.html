@@ -7,6 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
     <link rel="shortcut icon" href="./assets/brand/favicon.ico">
+    <script type="text/javascript" src="./ferry.js"></script>
     <title>MSquared Aviation | Ferry Flights</title>
 
     <!-- Bootstrap core CSS -->
@@ -89,12 +90,63 @@
     <div class="row">
       <div class="col">
         <p>We will agree a final price with you before the trip commences you can rest assured you will not be hit with unexpected costs upon delivery.
-          Our flights are fully insured, you will be shown the credentials of your ferry pilot before the trip commences. You will be able to track your aircraft online for the duration of its journey. Our pilots have the full backup of our operations department to ensure issues can be rectified quickly and plan’s B & C are already ready and waiting.
+          Our flights are fully insured, you will be shown the credentials of your ferry pilot before the trip commences. You will be able to track your aircraft online for the duration of its journey. Our pilots have the full backup of our operations department to ensure issues can be rectified quickly and plan’s B & C are already ready.
         </p>
         <p><a class="btn btn-lg btn-dark" href="./contact.html" role="button">Contact Us</a></p>
       </div>
       <div class="col">
         <img src="./images/towing.jpeg" alt="Glider Towing" class="img-thumbnail" width="auto" height="350">
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Ferry Cost Calculator</h3>
+        <p>M² Aviation will always aim to provide you with the most accurate quote possible and will stick to the quote that has been agreed upon.
+          you can use our calculator to generate a rough quote for our ferry services. Generally our accurate quote will be within +-25% of the quote generated on this page.
+          This quote will be inclusive of everything. Including fuel, crewing, positioning and navigation charges. 
+        </p>
+      </div>
+      <div class="col" style="height: 300px;">
+
+        <div class="md-form mb-0">
+          <label for="distance" class="">Distance (Nautical Miles)</label>
+          <input type="number" id="distance" name="distance" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="aircraft">Aircraft (Type or similar)</label>
+          <select class="form-control" id="aircraft">
+            <option value="acft1">Microlight/Motor Glider</option>
+            <option value="acft3">C152/PA38</option>
+            <option value="acft4">C172/PA28</option>
+            <option value="acft5">C182/PA28RT/DA40</option>
+            <option value="acft6">C206/PA32/C210/SR22</option>
+            <option value="acft7">DA42/PA34</option>
+            <option value="acft8">PA31/C402</option>
+            <option value="acft9">Cessna Caravan</option>
+            <option value="acft10">King Air 90/200/350</option>
+            <option value="acft11">Jetsteam 41</option>
+            <option value="acft12">DHC8 1/2/300</option>
+            <option value="acft13">DHC8 Q400</option>
+          </select>
+        </div>
+
+        <div>
+          <div id="result">£0.00</div>
+        </div>
+
+        <br>
+
+        <button type="quote" class="btn btn-primary" onclick="ferryCalc();">Quote</button>
+        <button type="reset" class="btn btn-primary" onclick="resetFunc();">Reset</button>
+        
+        <br>
+
       </div>
     </div>
   </div>
