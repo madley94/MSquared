@@ -24,6 +24,8 @@ var aCost = 0;
 
 var minPrice = 0;
 
+var exchange = 1.097;
+
 function ferryCalc(){
 
     var dist = document.getElementById("distance").value;
@@ -98,12 +100,16 @@ function ferryCalc(){
     var finalPrice = ((dist * aCost)/1000).toFixed(2);
 
     document.getElementById("result").innerHTML = `£ ${finalPrice} `;
+    document.getElementById("euroResult").innerHTML = `€ ${((finalPrice)*exchange).toFixed(2)}`;
 
 }
+
+//EXCHANGE RATE CORRECT AS OF 02/10/2020
 
 function resetFunc(){
     document.getElementById("distance").reset;
     document.getElementById("result").innerHTML = "£ 0.00";
+    document.getElementById("euroResult").innerHTML = "€ 0.00";
 
 }
 
