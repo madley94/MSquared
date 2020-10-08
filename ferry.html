@@ -90,9 +90,18 @@
 
   <div class="container">
     <p>Our breadth of knowledge is our strength. Every ferry pilot in our network has a minimum of 1500hrs flying experience. Most of our pilots have remained active as instructors and glider towing pilots, as well as operating ferry flights and commercial airline pilots.  We will always operate your aircraft to the highest safety standards; our team members are dedicated and passionate about the industry. We know our stuff.</p>
-    
   </div>
+  <div class="media bg-light">
+    <img src="./images/da42.jpeg" width="200" height="200" class="mr-3" alt="Diamond DA42">
+    <div class="media-body">
+      <br>
+      <h5 class="mt-0">Fleet relocation:</h5>
+      "Mike and his team coordinated the relocation of our schools fleet of single and multi engine aircraft from the UK to Spain." - Debi U, Airways Aviation Academy
+    </div>
+  </div>
+
   <br>
+
   <div class="container">
     <div class="row">
       <div class="col">
@@ -109,7 +118,7 @@
 
   <br>
 
-  <div class="container">
+  <div class="container bg-light">
     <div class="row">
       <div class="col">
         <h3>Ferry Cost Calculator</h3>
@@ -120,6 +129,16 @@
         <div class="md-form mb-0">
           <label for="distance" class="">Distance (Nautical Miles)</label>
           <input type="number" id="distance" name="distance" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="region">Region</label>
+          <select class="form-control" id="region">
+            <option value="UK">UK/IRE</option>
+            <option value="EU">EU</option>
+            <option value="EMEA">EU/ME/Africa</option>
+            <option value="WW">Worldwide</option>
+          </select>
         </div>
 
         <div class="form-group">
@@ -149,7 +168,7 @@
 
         <button type="quote" class="btn btn-primary" onclick="ferryCalc();">Quote</button>
         <button type="reset" class="btn btn-primary" onclick="resetFunc();">Reset</button>
-        
+
         <br>
 
       </div>
